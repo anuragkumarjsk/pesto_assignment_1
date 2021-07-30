@@ -6,7 +6,6 @@ import Card from './card'
 function List() {
     const todolist = useSelector(state => state.todos)
     const usedispatch = useDispatch()
-    const initialtimer = new Map()
     console.log(todolist)
     const buttonclicked=(id)=>{
         usedispatch(deletetodo({id}))
