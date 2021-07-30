@@ -17,7 +17,6 @@ const todosreducer = (state=[],action)=>{
    case 'DELETETODO': let arr=[]
                       arr = state.filter(obj => obj.id !== action.payload.id  )
                       return arr
-     break
    default: return state
 }
 }
